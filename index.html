@@ -8,11 +8,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <title>Bare - Start Bootstrap Template</title>
+
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
+  <title>TCF - Informatique</title>
 
   <!-- Bootstrap core CSS -->
   <link href="customCSS.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
   <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
 </head>
@@ -20,9 +22,10 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-scroll nav-dropdown-scroll fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">TCF Informatique</a>
+      <a class="navbar-brand" href="#">
+      <img src="tcf3.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">TCF Informatique</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,7 +40,7 @@
             <a class="nav-link" href="#depannage">Dépannage</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#remplecement">Remplacement</a>
+            <a class="nav-link" href="#remplacement">Remplacement</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#conseil">Conseil</a>
@@ -52,9 +55,9 @@
 
  <header class="masthead d-flex ">
     <div class="container text-center my-auto">
-      <h1 class="mb-50">TCF Informatique</h1>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#accueil">Savoir +</a>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Concact</a>
+      <h1 class="mb-50 text-white">TCF Informatique</h1>
+      <a class="btn btn-primary btn-lg js-scroll-trigger" href="#accueil">Savoir +</a>
+      <a class="btn btn-primary btn-lg js-scroll-trigger" href="#contact">Concact</a>
     </div>
     <div class="overlay"></div>
   </header>
@@ -63,7 +66,7 @@
 <section class="content-section" id="accueil">
     <div class="container">
         <div class="content-section-heading text-center">
-        <h2 class="mb-3 col-lg-12" style="color: #593459;">Bienvenue chez TCF Informatique</h3>
+        <h2 class="mb-3 col-lg-12" style="color: #593459;">Bienvenue chez TCF Informatique</h2>
         </div>
            
         <div class="row">
@@ -99,13 +102,199 @@
     </div>
   </section>
 
+  <!-- section 2 -->
+<section class="content-section bg-violet" id="depannage">
+    <div class="container">
+        <div class="content-section-heading text-center">
+        <h2 class="mb-3 col-lg-12" style="color: #ede9ed;">Dépannage</h2>
+        </div>
+           
+        <div class="row">
 
+              <div class="card-deck justify-content-around mt-4">
+                <div class="col-6 d-lg-inline">
+                  <h4 class="text-light-light p-3">Installation du système</br>d'exploitation</h4>
+                      <div class="col-9 card p-4">
+                        <img class="card-img-top mt-4 mb-3" src="loading.svg" width="150" height="150" alt="Card image cap">
+                          <div class="card-body p-5">
+                              <p class="card-text">Certains ordinateurs sont vendus sans OS. Lequel choisir et où trouver les bons pilotes.</p>
+                          </div>
+                         
+                      </div>
+                </div>
+                <div class="col-6 d-lg-inline">
+                  <h4 class="text-light-light p-3">Réinstallation du système</br>et récupération des données</h4>
+                      <div class="col-9 card p-4">
+                        <img class="card-img-top mt-4 mb-3" src="loading.svg" width="150" height="150" alt="Card image cap">
+                          <div class="card-body p-5">
+                             <p class="card-text">Un peu d'équipement est nécessaire pour gérer ses données lors d'un transfert.</p>
+                          </div>
+                      </div>
+                </div>
+              </div>
 
+        </div>
+        
+
+              <div class="row mt-2">
+
+              <div class="card-deck justify-content-around mt-4">
+                <div class="col-6 d-lg-inline">
+                  <h4 class="text-light-light p-3">Recherche et suppression</br>des logiciels malveillants</h4>
+                      <div class="col-9 card p-4">
+                        <img class="card-img-top mt-4 mb-3" src="help.svg" width="150" height="150" alt="Card image cap">
+                          <div class="card-body p-5">
+                              <p class="card-text">Les virus peuvent entraver l'expérience utilisateur et voler des données personnelles.</p>
+                          </div>
+                         
+                      </div>
+                </div>
+                <div class="col-6 d-lg-inline">
+                  <h4 class="text-light-light p-3">Dépannage et installation</br>d'équipements informatiques</h4>
+                      <div class="col-9 card p-4">
+                        <img class="card-img-top mt-4 mb-3" src="virus.svg" width="150" height="150" alt="Card image cap">
+                          <div class="card-body p-5">
+                             <p class="card-text">Certains équipements entrent en conflit et d'autres fonctionnent avec des dépendances.</p>
+                          </div>
+                      </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</section>
+
+<!------------------------ section 3 ------------------------------------->
+
+<section class="content-section" id="remplacement">
+    <div class="container">
+        <div class="content-section-heading text-center">
+        <h2 class="mb-3 col-lg-12" style="color: #593459;">Remplacement</h2>
+        </div>
+           
+<!------------------------- row 1 --------------------------------------->           
+        <div class="row justify-content-around my-5">
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto r1i1" >
+                    <h4 id="alim-hide" class="my-3">L'alimentation</h4>
+                      <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
+                      <div class="overlay text-center pb-2">
+                         <h5 class="my-2">L'alimentation</h5>
+                         <p class="text-light-light">L'alimentation permet de fournir la puissance électrique nécessaire au bon fonctionnement de l'ordinateur.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto r1i2" >
+                    <h4 id="cartegr-hide" class="my-3">La carte graphique</h4>
+                      <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
+                      <div class="overlay text-center pb-2">
+                         <h5 class="my-2">La carte graphique</h5>
+                         <p class="text-light-light">La carte graphique produit l'affichage sur l'écran de l'ordinateur.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto r1i3" >
+                    <h4 id="processeur-hide" class="my-3">Le processeur</h4>
+                      <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
+                      <div class="overlay text-center pb-2">
+                         <h5 class="my-2">Le processeur</h5>
+                         <p class="text-light-light">Le processeur est le cerveau de l'ordinateur, il interprète et exécute les instructions données à l'ordinateur.</p>
+                      </div>
+                  </div>
+              </div>
+        </div>  
+
+<!-------------------------------------------row 2 -------------------------------->
+
+ <div class="row justify-content-around my-5">
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto r2i1" >
+                    <h4 id="ventilateur-hide" class="my-3">Le ventilateur</h4>
+                      <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
+                      <div class="overlay text-center pb-2">
+                         <h5 class="my-2">Le ventilateur</h5>
+                         <p class="text-light-light">Le ventilateur s'occupe de refroidir nos composants. Le ventirad s'occupe uniquement de refroidir le processeur.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto r2i2" >
+                    <h4 id="lecteuroptique-hide" class="my-3">Le lecteur optique</h4>
+                      <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
+                      <div class="overlay text-center pb-2">
+                         <h5 class="my-2">Le lecteur optique</h5>
+                         <p class="text-light-light">Le lecteur optique permet de lire et graver les CD contenant des fichiers audio, vidéo, etc.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto r2i3" >
+                    <h4 id="memoirevive-hide" class="my-3">La mémoire vive</h4>
+                      <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
+                      <div class="overlay text-center pb-2">
+                         <h5 class="my-2">La mémoire vive</h5>
+                         <p class="text-light-light">La mémoire vive tient le rôle de mémoire immédiate en stockant des données qui sont très demandées.</p>
+                      </div>
+                  </div>
+              </div>
+</div>
+<!---------------------------------------row 3 ------------------------>
+
+ <div class="row justify-content-around my-5">
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto r3i1" >
+                    <h4 id="espacestockage-hide" class="my-3">L'espace de stockage</h4>
+                      <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
+                      <div class="overlay text-center pb-2">
+                         <h5 class="my-2">L'espace de stockage</h5>
+                         <p class="text-light-light">Le disque dur tient le rôle de la mémoire à long terme en stockant le système d'exploitation et vos données personnelles.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto r3i2" >
+                    <h4 id="cartemere-hide" class="my-3">La carte mère</h4>
+                      <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
+                      <div class="overlay text-center pb-2">
+                         <h5 class="my-2">La carte mère</h5>
+                         <p class="text-light-light">La carte mère est le composant qui lie tous les autres entre eux et qui gère aussi les performances de l'ordinateur.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto r3i3" >
+                    <h4 id="boitierpc-hide" class="my-3">Le boitier PC</h4>
+                      <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
+                      <div class="overlay text-center pb-2">
+                         <h5 class="my-2">Le boitier PC</h5>
+                         <p class="text-light-light">Tous les composants listés précédemment sont "rangés" dans un boitier. Il en existe de tailles différentes.</p>
+                      </div>
+                  </div>
+              </div>
+</div>
+
+</div>
+</section>
 
   <!-- Bootstrap core JavaScript -->
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
   <script src="customJS.js"></script>
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--<script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
 
 </body>
 
