@@ -27,7 +27,7 @@ html {
 .content-section-heading h3 {
   font-size: 1rem;
   text-transform: uppercase;
-  font-family: 'Open Sans regular';
+  font-family: 'Roboto', sans-serif;
 }
 
   .text-color-light-grey {color: #ede9ed;};
@@ -194,7 +194,7 @@ transition-delay:.2s;
 
 .panel-heading .panel-title > a {
   color: black;
-  font-family: Open sans regular;
+  font-family: Roboto, sans-serif;
   text-decoration: none;
   line-height: 30px;
   word-wrap: break-word;
