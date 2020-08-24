@@ -8,7 +8,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  font-family: 'Open sans light';
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -41,6 +41,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
+
 }
 
 h1 {font-family: 'Audiowide', cursive;
@@ -56,17 +57,9 @@ color: white;}
 
 /* NAVBAR COLOR CHANGE*/ 
 
-.navbar-default{
-  transition:500ms ease;
-  background:transparent;
-}
-.navbar {
-transition-duration: 0.6s;
-}
-.nav-dropdown-scroll {
-  background: black !important;
-  box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
-}
+
+
+
 
 .masthead {
   min-height: 30rem;
@@ -97,14 +90,6 @@ transition-duration: 0.6s;
   }
 }
 
-
-a {
-  color: #1D809F;
-}
-
-a:hover, a:focus, a:active {
-  color: #155d74;
-}
 
 /* -------------------------Hover animation - section 3 ---------------------------*/
 
@@ -197,4 +182,241 @@ transform:translatey(0);
 .hovereffect:hover p {
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
+}
+
+/* ---------------------- Collapse accordeon S4----------------*/
+
+.panel-default > .panel-heading {
+  background-color: #cdcdcd;
+  color: inherit;
+  border-radius: 0.3rem 0.3rem 0 0 ;
+}  
+
+.panel-heading .panel-title > a {
+  color: black;
+  font-family: Open sans regular;
+  text-decoration: none;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+  
+  .panel-heading .panel-title h4 {
+    padding-top: 0.6rem;
+    font-size: 16px;
+}
+
+ .conseils-icons {
+  color: white;
+  font-size: 24px;
+  border-radius: 0.3rem 0 0 0 ;
+  padding-top: 0.8rem;
+  margin-right: 1rem;
+  width: 40px;
+  height: 43px;
+  padding: auto;
+  background-color: #925692;
+ }   
+
+ [data-toggle="collapse"] .fas:before {  
+  content: "\f077";
+}
+
+[data-toggle="collapse"].collapsed .fas:before {
+  content: "\f078";
+}
+ 
+.panel-body{
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0px;
+  height:100%;
+  background-color: #ede9ed;border-radius: 0 0 4px 4px;
+  box-sizing: content-box !important;
+}
+
+/* -------- Adaptation de la box des conseil avec les titres longs-------*/
+
+@media only screen and (max-width: 767px) {
+  .conseils-icons-long, .conseils-icons-long::before,
+.conseils-icons-long::after {
+ box-sizing: content-box;
+ }
+}
+ /*--------Adatation de la liste des villes au petits écrans -----*/
+ @media only screen and (max-width: 580px) {
+  .villes {
+  text-align: center;
+ }
+}
+/* -------- Adaptation des titres aux petits écrans---------------*/
+
+@media only screen and (max-width: 415px) {
+
+ .content-section-heading h2 {
+  font-size: 2rem;
+ }
+ .masthead h1{
+  font-size: 2rem;
+  padding-top: 8rem; 
+ }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+  .masthead h1{
+  font-size: 3rem;
+  padding-top: 8rem; 
+ }
+ 
+}
+
+/* -------- Adaptation des boutons d'accuiel aux petits écrans-------*/
+
+@media only screen and (max-width: 405px) {
+  .btnacc {
+ margin: 1rem !important;
+ }
+}
+
+/* -------- Adaptation des boutons d'accuiel aux petits écrans-------*/
+
+@media only screen and (max-width: 575px) {
+  .textacc {
+ padding: 1rem 4rem !important;
+ }
+}
+/*----------------Contact Form------------------------*/
+
+
+.icon-contact {
+  margin-right: 0.6rem;
+}
+.form-control,
+.form-group .form-control {
+    border: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+    -webkit-background-size: 0 2px, 100% 1px;
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center -webkit-calc(100% - 1px);
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: background 0s ease-out;
+    -o-transition: background 0s ease-out;
+    transition: background 0s ease-out;
+    float: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+.form-control::-moz-placeholder,
+.form-group .form-control::-moz-placeholder {
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control:-ms-input-placeholder,
+.form-group .form-control:-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control::-webkit-input-placeholder,
+.form-group .form-control::-webkit-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group {
+    position: relative
+}
+
+
+.form-control {
+    margin-bottom: 7px
+}
+
+.form-control::-moz-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+
+.form-group {
+    padding-bottom: 7px;
+    margin: 3px 0 0 0
+}
+
+.form-group .form-control {
+    margin-bottom: 2px
+}
+
+.form-group .form-control::-moz-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group .form-control:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group .form-control::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+
+
+.form-group label.control-label {
+    font-size: 12px;
+    line-height: 1.07142857;
+    font-weight: 400;
+    margin: 6px 0 6px 0
+}
+
+
+
+.form-group.label-floating label.control-label,
+.form-group.label-placeholder label.control-label {
+    top: -7px;
+    font-size: 16px;
+    line-height: 1.42857143
+}
+
+
+#contactForm .form-group label.control-label, .form {
+    color: #8c8c8c
+}
+
+#contactForm .form-control {
+    font-weight: 500;
+    height: auto;
 }

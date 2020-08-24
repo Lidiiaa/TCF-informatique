@@ -11,22 +11,23 @@
 //   })
 // })
 
-/* --------------- Text desappear --------------------*/
-// var x = getElementsByClassName('hoveralim');
-// x.onmouseover = function(Hide){
-//   document.getElementById('disappear1').style.color = "white";
-// };
 
+ /*---------scrollspy--------*/
 
-
+ // $('body').scrollspy({ target: '.navbar' });
 //Change pos/background/padding/add shadow on nav when scroll event happens 
-$(function(){
-  var navbar = $('.navbar');
+
+
+
+$(function(e){
+  var navbar = $('.navbarscroll');
   
   $(window).scroll(function(){
     if($(window).scrollTop() <= 500){
       navbar.removeClass('nav-dropdown-scroll');
+     
     } else {
+      
       navbar.addClass('nav-dropdown-scroll');
     }
   });
@@ -34,8 +35,22 @@ $(function(){
 
 /*------------------- HOVER ANIMATION SECTION 3-------------------*/
 
-$('.hovereffect').mouseover(function() {
-    $('#alim-hide').css("color","transparent");;
-}).mouseout(function() {
-    $('#alim-hide').css("color","black");;
+
+$(document).ready(function()
+{          
+    $(".hovereffect").hover(function(){
+        $(this).find(".r1").css("color","transparent")},
+        function () {
+        $(this).find(".r1").css("color",'#593459')
+    });
+});
+
+
+
+/* ---------------------------Change icon animation ----------------------*/
+
+$('.collapse').on('shown.bs.collapse', function(){
+$(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+}).on('hidden.bs.collapse', function(){
+$(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
 });

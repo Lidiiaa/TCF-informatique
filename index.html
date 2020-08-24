@@ -7,22 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
 
 <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
   <title>TCF - Informatique</title>
 
   <!-- Bootstrap core CSS -->
+
   <link href="customCSS.css" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"></link>
+
   <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-scroll nav-dropdown-scroll fixed-top">
+  <!-------------------------- Navigation --------------------------------------------->
+  <nav id="navbar-example" class="navbar navbarscroll navbar-expand-lg navbar-dark nav-dropdown-scroll fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
       <img src="tcf3.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">TCF Informatique</a>
@@ -31,7 +37,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#accueil">Accueil
               <span class="sr-only">(current)</span>
             </a>
@@ -45,24 +51,27 @@
           <li class="nav-item">
             <a class="nav-link" href="#conseil">Conseil</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
  </nav>
 
-  <!--Page Content -->
+  <!--------------------------Page Content -------------------------------------------->
 
 
- <header class="masthead d-flex ">
+ <header class="masthead d-flex" style="background-image: url('fond header fonce.jpg'); ">
     <div class="container text-center my-auto">
-      <h1 class="mb-50 text-white">TCF Informatique</h1>
-      <a class="btn btn-primary btn-lg js-scroll-trigger" href="#accueil">Savoir +</a>
-      <a class="btn btn-primary btn-lg js-scroll-trigger" href="#contact">Concact</a>
+      <h1 class="mb-5 mt-5 text-white">TCF Informatique</h1>
+      <a class="btn btn-primary btn-lg btnacc" href="#accueil">Savoir +</a>
+      <a class="btn btn-primary btn-lg btnacc" href="#contact">Concact</a>
     </div>
     <div class="overlay"></div>
   </header>
 
-<!-- section 1 -->
+<!------------------------ SECTION 1 ACCUEIL ------------------------------------------>
 <section class="content-section" id="accueil">
     <div class="container">
         <div class="content-section-heading text-center">
@@ -71,15 +80,15 @@
            
         <div class="row">
             <div class="d-block mx-auto">
-                <div class="text-black mb-3 col-lg-12">
+                <div class="text-black mb-3 col-lg-12 px-md-5 textacc">
         			<h3 class="my-3">Dépannage, réparation, remplacement et conseils d'achat.</h3>
         			<h5>Les devis sont gratuits. Je me déplace sur les communes de :</h5>
         		</div>
     		</div>
     	</div>
-    	<div class="row justify-content-around">	
-      		<div class="container d-flex ml-5">
-				<div class="col-3 pl-5 mt-5 mb-5 mb-lg-0 text-left mx-auto">
+    	<div class="row d-lg-block col-lg-7 mx-auto  mt-5 ">	
+      		<div class="container text-left">
+				<div class=" float-left col-lg-3 col-md-3 col-sm-3 mr-5 villes">
 					<p class="mb-2">Boisseuil</p>
 					<p class="mb-2">Couzeix</p>
 					<p class="mb-2">Eyjeaux</p>
@@ -88,7 +97,7 @@
 					<p class="mb-2">Le Vigen</p>
 					<p class="mb-2">Limoges</p>
         		</div>
-        		<div class="col-4 col-md-6 col-sm-12 mt-lg-5 mt-md-5 mt-sm-1 mb-lg-0 text-left">
+        		<div class=" float-right col-lg-4 col-md-4 col-sm-4 villes">
 					<p class="mb-2">Magnac-Bourg</p>
 					<p class="mb-2">Panazol</p>
 					<p class="mb-2">Pierre Buffière</p>
@@ -97,23 +106,24 @@
 					<p class="mb-2">Saint-Paul</p>
 					<p class="mb-2">Vicq sur Breuilh</p>
         		</div>
+            <div class="clearfix"></div>
     		</div>
         </div>
     </div>
   </section>
 
-  <!-- section 2 -->
+<!------------------------ SECTION 2 DEPANNAGE ---------------------------------------->
 <section class="content-section bg-violet" id="depannage">
-    <div class="container">
+    <div class="container justify-content-center">
         <div class="content-section-heading text-center">
         <h2 class="mb-3 col-lg-12" style="color: #ede9ed;">Dépannage</h2>
         </div>
            
-        <div class="row">
+    <div class="row justify-content-center d-xs-block ml-3">
 
-              <div class="card-deck justify-content-around mt-4">
-                <div class="col-6 d-lg-inline">
-                  <h4 class="text-light-light p-3">Installation du système</br>d'exploitation</h4>
+              <div class="card-deck mt-4">
+                <div class="col-xl-6 col-lg-6 col-12 col-md-12 col-sm-12 col-xs-12">
+                  <h4 class="text-light-light p-3 col-12">Installation du système</br>d'exploitation</h4>
                       <div class="col-9 card p-4">
                         <img class="card-img-top mt-4 mb-3" src="loading.svg" width="150" height="150" alt="Card image cap">
                           <div class="card-body p-5">
@@ -122,7 +132,7 @@
                          
                       </div>
                 </div>
-                <div class="col-6 d-lg-inline">
+                <div class="col-lg-6 col-12 col-md-12 col-sm-12 col-xs-12">
                   <h4 class="text-light-light p-3">Réinstallation du système</br>et récupération des données</h4>
                       <div class="col-9 card p-4">
                         <img class="card-img-top mt-4 mb-3" src="loading.svg" width="150" height="150" alt="Card image cap">
@@ -136,10 +146,10 @@
         </div>
         
 
-              <div class="row mt-2">
+        <div class="row justify-content-center d-xs-block ml-3">
 
               <div class="card-deck justify-content-around mt-4">
-                <div class="col-6 d-lg-inline">
+                <div class="col-xl-6 col-lg-6 col-12 col-md-12 col-sm-12 col-xs-12">
                   <h4 class="text-light-light p-3">Recherche et suppression</br>des logiciels malveillants</h4>
                       <div class="col-9 card p-4">
                         <img class="card-img-top mt-4 mb-3" src="help.svg" width="150" height="150" alt="Card image cap">
@@ -149,7 +159,7 @@
                          
                       </div>
                 </div>
-                <div class="col-6 d-lg-inline">
+                <div class="col-lg-6 col-12 col-md-12 col-sm-12 col-xs-12">
                   <h4 class="text-light-light p-3">Dépannage et installation</br>d'équipements informatiques</h4>
                       <div class="col-9 card p-4">
                         <img class="card-img-top mt-4 mb-3" src="virus.svg" width="150" height="150" alt="Card image cap">
@@ -164,7 +174,7 @@
     </div>
 </section>
 
-<!------------------------ section 3 ------------------------------------->
+<!------------------------ SECTION 3  REMPLACEMENT------------------------------------->
 
 <section class="content-section" id="remplacement">
     <div class="container">
@@ -172,12 +182,12 @@
         <h2 class="mb-3 col-lg-12" style="color: #593459;">Remplacement</h2>
         </div>
            
-<!------------------------- row 1 --------------------------------------->           
+<!--------------------------- row 1 --------------------------------------->           
         <div class="row justify-content-around my-5">
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                  <div class="hovereffect justify-content-center py-auto r1i1" >
-                    <h4 id="alim-hide" class="my-3">L'alimentation</h4>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto" >
+                    <h4 class="my-3 r1">L'alimentation</h4>
                       <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
                       <div class="overlay text-center pb-2">
                          <h5 class="my-2">L'alimentation</h5>
@@ -186,9 +196,9 @@
                   </div>
               </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                  <div class="hovereffect justify-content-center py-auto r1i2" >
-                    <h4 id="cartegr-hide" class="my-3">La carte graphique</h4>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto" >
+                    <h4 class="my-3 r1">La carte graphique</h4>
                       <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
                       <div class="overlay text-center pb-2">
                          <h5 class="my-2">La carte graphique</h5>
@@ -197,9 +207,9 @@
                   </div>
               </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                  <div class="hovereffect justify-content-center py-auto r1i3" >
-                    <h4 id="processeur-hide" class="my-3">Le processeur</h4>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto " >
+                    <h4 id="processeur-hide" class="my-3 r1">Le processeur</h4>
                       <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
                       <div class="overlay text-center pb-2">
                          <h5 class="my-2">Le processeur</h5>
@@ -209,13 +219,13 @@
               </div>
         </div>  
 
-<!-------------------------------------------row 2 -------------------------------->
+<!----------------------------row 2 --------------------------------------->
 
  <div class="row justify-content-around my-5">
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                  <div class="hovereffect justify-content-center py-auto r2i1" >
-                    <h4 id="ventilateur-hide" class="my-3">Le ventilateur</h4>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto" >
+                    <h4 class="my-3 r1">Le ventilateur</h4>
                       <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
                       <div class="overlay text-center pb-2">
                          <h5 class="my-2">Le ventilateur</h5>
@@ -224,9 +234,9 @@
                   </div>
               </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                  <div class="hovereffect justify-content-center py-auto r2i2" >
-                    <h4 id="lecteuroptique-hide" class="my-3">Le lecteur optique</h4>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 ">
+                  <div class="hovereffect justify-content-center py-auto" >
+                    <h4 class="my-3 r1">Le lecteur optique</h4>
                       <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
                       <div class="overlay text-center pb-2">
                          <h5 class="my-2">Le lecteur optique</h5>
@@ -235,9 +245,9 @@
                   </div>
               </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                  <div class="hovereffect justify-content-center py-auto r2i3" >
-                    <h4 id="memoirevive-hide" class="my-3">La mémoire vive</h4>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                  <div class="hovereffect justify-content-center py-auto" >
+                    <h4 class="my-3 r1">La mémoire vive</h4>
                       <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
                       <div class="overlay text-center pb-2">
                          <h5 class="my-2">La mémoire vive</h5>
@@ -246,13 +256,13 @@
                   </div>
               </div>
 </div>
-<!---------------------------------------row 3 ------------------------>
+<!----------------------------row 3 --------------------------------------->
 
  <div class="row justify-content-around my-5">
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                  <div class="hovereffect justify-content-center py-auto r3i1" >
-                    <h4 id="espacestockage-hide" class="my-3">L'espace de stockage</h4>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                  <div class="hovereffect justify-content-center py-auto" >
+                    <h4 class="my-3 r1">L'espace de stockage</h4>
                       <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
                       <div class="overlay text-center pb-2">
                          <h5 class="my-2">L'espace de stockage</h5>
@@ -261,9 +271,9 @@
                   </div>
               </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                  <div class="hovereffect justify-content-center py-auto r3i2" >
-                    <h4 id="cartemere-hide" class="my-3">La carte mère</h4>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                  <div class="hovereffect justify-content-center py-auto" >
+                    <h4 class="my-3 r1">La carte mère</h4>
                       <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
                       <div class="overlay text-center pb-2">
                          <h5 class="my-2">La carte mère</h5>
@@ -272,9 +282,9 @@
                   </div>
               </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                  <div class="hovereffect justify-content-center py-auto r3i3" >
-                    <h4 id="boitierpc-hide" class="my-3">Le boitier PC</h4>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                  <div class="hovereffect justify-content-center py-auto" >
+                    <h4 class="my-3 r1">Le boitier PC</h4>
                       <img class="img-responsive" src="powersupply.svg" width="150" height="150" alt="">
                       <div class="overlay text-center pb-2">
                          <h5 class="my-2">Le boitier PC</h5>
@@ -287,12 +297,187 @@
 </div>
 </section>
 
+
+<!-----------------------------SECTION 4 CONSEIL --------------------------->
+<section class="content-section bg-violet" id="conseil">
+    <div class="container">
+        <div class="content-section-heading text-center">
+        <h2 class="mb-5 col-lg-12" style="color: #ede9ed;">Conseils</h2>
+        </div>
+        <div class=" col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12  mx-auto mt-5"> 
+<!-----1 conseil----->
+    <div class="panel-group" id="accordion1">
+        <div class="panel panel-default mb-3">
+            <div class="panel-heading">
+                <div class="panel-title clearfix rounded-top">
+                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse1"><i class="fas float-left conseils-icons conseils-icons-long text-center align-middle" aria-hidden="false"></i><h4 class="float-left align-middle" >Ne désinstallez pas un logiciel <br class="d-xl-none d-lg-none d-md-none">que vous ne connaissez pas</h4></a>
+                </div>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">Ce logiciel qui porte un nom à rallonge qui ne vous dit rien est certainement nécessaire au fonctionnement de votre ordinateur ne le désinstallez pas ! Prenez le temps de vous renseigner ou d'appeler un pro.
+                </div>
+            </div>
+        </div>
+      </div>
+<!-----2 conseil----->
+         <div class="panel panel-default mb-3">
+            <div class="panel-heading">
+                <div class="panel-title clearfix rounded-top">
+                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse2"><i class="fas float-left conseils-icons conseils-icons-long text-center align-middle" aria-hidden="true"></i><h4 class="float-left">Pensez à éteindre <br class="d-xl-none d-lg-none d-md-none d-xs-none">votre ordinateur</h4></a>
+                </div>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">Beaucoup d'idées reçues laissent penser qu'on peut laisser son ordinateur en veille sans jamais avoir à l'éteindre. Cela dit les systèmes d'exploitations stockent des fichiers temporaires qu'ils vident lorsqu'on éteind son ordinateur.</div>
+            </div>
+         </div>
+<!-----3 conseil----->
+        <div class="panel panel-default mb-3">
+            <div class="panel-heading">
+                <div class="panel-title clearfix rounded-top">
+                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse3"><i class="fas float-left conseils-icons text-center align-middle" aria-hidden="true"></i><h4 class="float-left">Les pilotes et les programmes</h4></a>
+                </div>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">Essayez de garder les pilotes et les programmes de votre ordinateur à jour si vous pouvez le faire. On trouve souvent des failles de sécurités qui sont corrigées par le biais de mise à jour.</div>
+            </div>
+        </div>
+<!-----4 conseil----->
+        <div class="panel panel-default mb-3">
+            <div class="panel-heading">
+                <div class="panel-title clearfix rounded-top">
+                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse4"><i class="fas float-left conseils-icons text-center align-middle" aria-hidden="true"></i><h4 class="float-left">Intervertir des disques durs</h4></a>
+                </div>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">Ne mettez pas dans un ordinateur un disque dur provenant d'une autre machine surtout s'il contient un autre système d'exploitation. Par contre un disque qui contient uniquement des données statiques (documents, images, vidéos et musiques) peut être déplacer sans soucis.</div>
+            </div>
+        </div>
+
+<!-----5 conseil----->
+        <div class="panel panel-default mb-3">
+            <div class="panel-heading">
+                <div class="panel-title clearfix rounded-top">
+                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse5"><i class="fas float-left conseils-icons text-center align-middle" aria-hidden="true"></i><h4 class="float-left">Mélanger la RAM</h4></a>
+                </div>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+                <div class="panel-body">Les barrettes de RAM ne sont pas compatibles avec tous les ordinateurs, les fréquences et les technologies peuvent varier d'un barrette à l'autre. Il faut aussi savoir que si vous mettez deux barrettes de fréquences différentes, votre ordinateur se calera sur la fréquence la plus basse.</div>
+            </div>
+        </div>
+
+
+<!-----6 conseil----->
+        <div class="panel panel-default mb-3">
+            <div class="panel-heading">
+                <div class="panel-title clearfix rounded-top">
+                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse6"><i class="fas float-left conseils-icons text-center align-middle" aria-hidden="true"></i><h4 class="float-left">Les clés USB</h4></a>
+                </div>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+                <div class="panel-body">Ne branchez pas des clés USB inconnues sur votre ordinateur. Certaines peuvent être saines mais d'autres peuvent agir bizarrement lorsque vous les branchez et executer des commandes particulières. Attention ces clés ne sont pas identifiables avant de les avoir branchées.</div>
+            </div>
+        </div>
+
+
+<!-----7 conseil----->
+        <div class="panel panel-default mb-3">
+            <div class="panel-heading">
+                <div class="panel-title clearfix rounded-top">
+                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse7"><i class="fas float-left conseils-icons text-center align-middle" aria-hidden="true"></i><h4 class="float-left">Les sites internet frauduleux</h4></a>
+                </div>
+            </div>
+            <div id="collapse7" class="panel-collapse collapse">
+                <div class="panel-body">Certains sites internet vous assurent que vous avez subit une attaque informatique tout en vous affichant un numéro de téléphone à appeler en cas d'urgence. N'appelez en aucun cas ce numéro même si votre ordinateur ne fonctionne pas comme d'habitude. De même si le dit site vous propose d'installer un programme ou logiciel tiers afin de diagnostiquer votre appareil. Appelez un professionnel de l'informatique.</div>
+            </div>
+        </div>
+<!---fin 7 conseil--->
+        </div>
+    </div> 
+
+
+  
+</div>
+</section>
+
+
+<!---------------------SECTION 6 CONTACT -------------------------->
+<section class="Material-contact-section content-section section-padding section-dark" id="contact">
+   
+        <div class="content-section-heading text-center py-2">
+        <h2 class="col-lg-12" style="color: #593459;">Contacts</h2>
+        </div>
+
+
+<div class="container">
+                      
+          <div class="row ">
+              <div class="col-xl-8 col-lg-8 mx-lg-auto col-md-10 col-xs-12 col-sm-12 col-12 mx-auto px-5">
+<!------------------------Boutons contact ------------------------->
+                      <div class="col-lg-6 form-submit my-5 mx-auto btns-contact">
+                          <button class="btn btn-primary py-2 mx-auto btn-block" type="submit" id="form-submit"><i class="fas fa-phone-alt icon-contact"></i>06 34 58 03 38</button>
+                          <button class="btn btn-primary py-2 mx-auto btn-block" type="submit" id="form-submit"><a href="mailto: contact@tcf‑informatique.fr"><i class="far fa-envelope icon-contact"></i>contact@tcf‑informatique.fr</a></button>
+                      </div>
+
+<!--------------------------Contact form -------------------------->
+                  <form class="shake mt-5" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <!-- Nom -->
+                      <div class="form-group label-floating purple-border">
+                        <label class="control-label" for="name"><span class="text-danger">*</span>Nom et prénom</label>
+                        <input class="form-control" id="name" type="text" name="name" required data-error="Veuillez inserer votre nom, s'il vous plait">
+                       
+                      </div>
+                      <!-- Objet -->
+                      <div class="form-group label-floating purple-border">
+                        <label class="control-label"><span class="text-danger">*</span>Objet</label>
+                        <input class="form-control" id="suject" type="text" name="subject" required data-error="Veuillez inserer l'objet de message, s'il vous plait">
+                       
+                      </div>
+                      <!-- email -->
+                      <div class="form-group label-floating purple-border">
+                        <label class="control-label" for="email"><span class="text-danger">*</span>Email</label>
+                        <input class="form-control" id="email" type="email" name="email" required data-error="Veuillez inserer votre email, s'il vous plait">
+                        
+                      </div>
+                      <!-- Téléphone -->
+                      <div class="form-group label-floating purple-border">
+                        <label class="control-label"><span class="text-danger">*</span>Téléphone</label>
+                        <input class="form-control purple-border" id="msg_tel" type="text" name="subject" required data-error="Veuillez inserer votre numéro de téléphone, s'il vous plait">
+                       
+                      </div>
+                      <!-- Message -->
+                      <div class="form label-floating purple-border">
+                          <label for="message" class="control-label"><span class="text-danger">*</span>Message</label>
+                          <textarea class="form-control" rows="3" id="message"  required data-error="Veuillez écrire votre message, s'il vous plait" placeholder="Essayer de décrire votre problème"></textarea>
+                     
+                      </div>
+
+                      <!---   Message  ---->
+
+                      <div class="mt-3">
+                        <p>Les champs précédés d'un asterix (<span class="text-danger">*</span>) sont obligatoires</p>
+                      </div>
+                      <!-- Form Submit -->
+                      <div class="form-submit mt-5 d-flex">
+                          <button class="btn btn-primary py-2 mx-auto" type="submit" id="form-submit" onclick="document.getElementById('contactForm').submit();"><i class="material-icons mdi mdi-message-outline"></i>Envoyer</button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+
+
+    </div>
+</section>
   <!-- Bootstrap core JavaScript -->
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
+<script  src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
-  <script src="customJS.js"></script>
+<script src="customJS.js"></script>
+<script src="https://kit.fontawesome.com/e4347b2414.js" crossorigin="anonymous"></script>
+  
+  
+  <script src="js/bootstrap.bundle.min.js"></script>
   <!--<script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
 
