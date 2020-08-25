@@ -82,6 +82,8 @@ position: relative;
   outline: 0 !important;
 }
 
+
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -4980,6 +4982,7 @@ tbody.collapse.show {
   background-color: #e9ecef;
   border-radius: 0.3rem;
 }
+
 
 @media (min-width: 576px) {
   .jumbotron {

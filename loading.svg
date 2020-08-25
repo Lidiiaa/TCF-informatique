@@ -1,1 +1,19 @@
-<svg height="464pt" viewBox="0 0 464 464" width="464pt" xmlns="http://www.w3.org/2000/svg"><path d="m96 192h16v32h-16zm0 0"/><path d="m128 192h16v32h-16zm0 0"/><path d="m160 192h16v32h-16zm0 0"/><path d="m192 192h208v32h-208zm0 0"/><path d="m432 0h-400v48h400zm-368 32h-16v-16h16zm32 0h-16v-16h16zm32 0h-16v-16h16zm0 0"/><path d="m320 432h-176v16h-32v16h240v-16h-32zm0 0"/><path d="m0 392c0 13.230469 10.769531 24 24 24h416c13.230469 0 24-10.769531 24-24v-8h-464zm0 0"/><path d="m448 129.472656v222.527344h-432v-222.527344c-9.289062 3.3125-16 12.113282-16 22.527344v216h464v-216c0-10.414062-6.710938-19.214844-16-22.527344zm0 0"/><path d="m64 192h16v32h-16zm0 0"/><path d="m432 64h-400v272h400zm-336 80h96v16h-96zm-32 0h16v16h-16zm16 128h-16v-16h16zm112 0h-96v-16h96zm224-32h-368v-64h368zm0 0"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 464 464" style="enable-background:new 0 0 464 464;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#593459;}
+</style>
+<path class="st0" d="M96,192h16v32H96V192z"/>
+<path class="st0" d="M128,192h16v32h-16V192z"/>
+<path class="st0" d="M160,192h16v32h-16V192z"/>
+<path class="st0" d="M192,192h208v32H192V192z"/>
+<path class="st0" d="M432,0H32v48h400V0z M64,32H48V16h16V32z M96,32H80V16h16V32z M128,32h-16V16h16V32z"/>
+<path class="st0" d="M320,432H144v16h-32v16h240v-16h-32V432z"/>
+<path class="st0" d="M0,392c0,13.2,10.8,24,24,24h416c13.2,0,24-10.8,24-24v-8H0V392z"/>
+<path class="st0" d="M448,129.5V352H16V129.5C6.7,132.8,0,141.6,0,152v216h464V152C464,141.6,457.3,132.8,448,129.5z"/>
+<path class="st0" d="M64,192h16v32H64V192z"/>
+<path class="st0" d="M432,64H32v272h400V64z M96,144h96v16H96V144z M64,144h16v16H64V144z M80,272H64v-16h16V272z M192,272H96v-16
+	h96V272z M416,240H48v-64h368V240z"/>
+</svg>
