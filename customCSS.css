@@ -48,10 +48,6 @@ h1 {font-family: 'Audiowide', cursive;
 color: white;}
 
 
-/*.text-faded {
-  color: rgba(255, 255, 255, 0.7);
-}
-*/
 
 #accuiel {background-color: #ede9ed};
 
@@ -101,6 +97,9 @@ color: white;}
     background-color: #ede9ed;
   }
 }
+
+
+
 /* -------------------------Hover animation - section 3 ---------------------------*/
 
 .hovereffect {
@@ -215,6 +214,13 @@ transition-delay:.2s;
     font-size: 16px;
 }
 
+ @media only screen and (min-width: 768px) {
+  .panel-heading .panel-title h4 {
+    padding-top: 1.5rem !important;
+    }
+}
+
+
  .conseils-icons {
   color: white;
   font-size: 24px;
@@ -223,7 +229,7 @@ transition-delay:.2s;
   margin-right: 1rem;
   width: 40px;
   height: 43px;
-  padding: auto;
+ 
   background-color: #925692;
  }   
 
@@ -250,6 +256,8 @@ transition-delay:.2s;
   .conseils-icons-long, .conseils-icons-long::before,
 .conseils-icons-long::after {
  box-sizing: content-box;
+ padding-top: 1.5rem !important;
+    
  }
 }
  /*--------Adatation de la liste des villes au petits écrans -----*/
@@ -263,7 +271,7 @@ transition-delay:.2s;
 @media only screen and (max-width: 415px) {
 
  .content-section-heading h2 {
-  font-size: 2rem;
+  font-size: 1rem;
  }
  .masthead h1{
   font-size: 2rem;
@@ -281,6 +289,8 @@ transition-delay:.2s;
  
 }
 
+
+
 /* -------- Adaptation des boutons d'accuiel aux petits écrans-------*/
 
 @media only screen and (max-width: 405px) {
@@ -294,6 +304,7 @@ transition-delay:.2s;
 @media only screen and (max-width: 575px) {
   .textacc {
  padding: 1rem 4rem !important;
+ text-align: center;
  }
 }
 /*----------------Contact Form------------------------*/
