@@ -1,15 +1,4 @@
-// $(document).ready(function(){
-//   $(window).scroll(function(){
-//     var scroll = $(window).scrollTop();
-//     if (scroll > 300) {
-//       $(".navbar-scroll").css("background" , rgba(52, 58, 64, 0.5);
-//     }
 
-//     else{
-//       $(".navbar-scroll").css("background" , "#333");   
-//     }
-//   })
-// })
 
 
  /*---------scrollspy--------*/

@@ -28,7 +28,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="70">
 
   <!-------------------------- Navigation --------------------------------------------->
-  <nav id="navbar-example" class="navbar navbarscroll navbar-expand-lg navbar-dark nav-dropdown-scroll fixed-top">
+  <nav id="navbar-example" class="navbar navbarscroll navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
       <img src="tcf3.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">TCF Informatique</a>
@@ -88,7 +88,7 @@
     	</div>
     	<div class="row d-lg-block col-lg-7 mx-auto">	
       		<div class="container text-left">
-				<div class=" float-left col-lg-3 col-md-3 col-sm-3 mr-5 villes">
+				<div class=" float-left col-lg-3 col-md-3 col-sm-3 mr-5 mt-2 villes">
 					<p class="mb-2">Boisseuil</p>
 					<p class="mb-2">Couzeix</p>
 					<p class="mb-2">Eyjeaux</p>
@@ -415,7 +415,9 @@
                       </div>
 
 <!--------------------------Contact form -------------------------->
-                 
+                                  <?php
+                                  require 'contactform.php';
+                                  ?>
                   <form class="shake mt-5" role="form" method="post" action="formulaire.php" id="contactForm" name="contact-form" data-toggle="validator">
                       <!-- Nom -->
                       <div class="form-group label-floating purple-border">
