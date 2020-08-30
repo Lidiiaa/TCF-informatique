@@ -216,7 +216,7 @@ transition-delay:.2s;
 
  @media only screen and (min-width: 768px) {
   .panel-heading .panel-title h4 {
-    padding-top: 1rem !important;
+    padding-top: 0.7rem !important;
     }
 }
 
